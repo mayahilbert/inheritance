@@ -1,0 +1,179 @@
+* {
+    --vimeo-padding-inline: 15.2vw;
+    --vimeo-padding-block: 8.55vw;
+}
+
+@media (max-width:30rem) {
+    * {
+        --vimeo-padding-inline: 0;
+        --vimeo-padding-block: 0;
+    }
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    font-family: "Martel", "Merriweather", serif;
+    color: #CEA89E;
+    background-color: #1C1313;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.vimeo-vid {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: var(--vimeo-padding-inline);
+    padding-block: calc(var(--vimeo-padding-block) / 2);
+    transition: 0.3s;
+}
+
+.vimeo-vid iframe {
+    /* 16:9 */
+    width: calc(96vw - (var(--vimeo-padding-inline) * 2));
+    height: calc(54vw - (var(--vimeo-padding-block) * 2));
+}
+
+iframe {
+    max-height: 99vh;
+}
+
+
+.playbutton {
+    width: calc(96vw - (var(--vimeo-padding-inline) * 2));
+    height: calc(54vw - (var(--vimeo-padding-block) * 2));
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide .playbutton {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+.slide-negative .playbutton {
+    background-image: url('negative-capability-thumb.jpg');
+}
+
+.slide-duet .playbutton {
+    background-image: url('duet-thumb.jpg');
+}
+
+.slide-leslie .playbutton {
+    background-image: url('leslie-thumb.jpg');
+}
+
+.slide-here .playbutton {
+    background-image: url('here-it-comes-thumb.jpg');
+}
+
+.playbutton-icon {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    opacity: 0.9;
+    transition: 0.3s;
+    cursor: pointer;
+    border-width: 4vw 0 4vw 8vw;
+    border-color: transparent transparent transparent #2a1d1d;
+}
+
+.playbutton-icon:hover {
+    opacity: 1;
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show {
+    opacity: 1;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.swiper-slide::before {
+    content: "";
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+}
+
+.slide-negative::before {
+    background-image: url("negative-capability-texture.jpg");
+}
+
+.slide-duet::before {
+    background-image: url("duet-texture.jpg");
+}
+
+.slide-leslie::before {
+    background-image: url("leslie-texture.jpg");
+}
+
+.slide-here::before {
+    background-image: url("here-it-comes-texture.jpg");
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: transparent;
+    border: 0.6vw solid #1C1313;
+    border-radius: 50%;
+    height: clamp(20px, 2vw, 60px);
+    width: clamp(20px, 2vw, 60px);
+    margin-inline: 0.6vw;
+    transition: 0.4s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: #1C1313;
+}
+
+@media (max-width:30rem) {
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        margin-inline: 0;
+    }
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-family: none;
+    color: transparent;
+}
+
+.swiper-button-disabled {
+    opacity: 1;
+}

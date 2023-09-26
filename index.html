@@ -1,65 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inheritance</title>
-    <link rel="stylesheet" href="zoomist.min.css" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-    ></script>
-    <script src="zoomist.min.js"></script>
-    <style>body {margin:0;}.project-main-display {display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      max-width: 100vw;
-      max-height: 100vh;
-      overflow: hidden;      width: 100%;
-      height:100vh;
-    position: absolute;
-    }
-    .project-main-display > * {
-
-    }.project-main-display-wrapper{max-width: 100vw; max-height:100vh}
-    .vimeo-vid {
-      z-index: 999;
-      max-width:80vw;
-margin: 0 auto;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriela Vainsencher: Inheritance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Martel:wght@200;700&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="main.css">
 
 
-    </style>
-      
 </head>
-<body>
-  <div class="project-main-display-wrapper">
 
-  <div class="project-main-display">
-    <div
-      id="texture-1"
-      data-zoomist-src="Gabriela Vainsencher_Mom_2021_detail2.jpg"
-    ></div>
-    <noscript>
-      <img src="Gabriela Vainsencher_Mom_2021_detail2.jpg" />
-    </noscript>
-  </div><div class="vimeo-vid" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/865662726?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Negative Capability"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-</div>
-  
-    <script>
-      const Zoomist1 = new Zoomist("#texture-1", {
-        slider: false,
-        zoomer: false,
-        wheelable: false,
-        pinchable: false,
-        on: {
-        ready() {      
-          Zoomist1.zoom(0.4);
-        }
-      }
-      });
-    </script>
+<body>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide-negative" data-hash="0">
+        <div class="vimeo-vid-wrapper">
+          <div class="vimeo-vid">
+            <div class="playbutton">
+              <div class="playbutton-icon"></div>
+            </div>
+            <iframe
+              src="https://player.vimeo.com/video/865662726?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Negative Capability"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide slide-duet" data-hash="1">
+        <div class="vimeo-vid-wrapper">
+          <div class="vimeo-vid">
+            <div class="playbutton">
+              <div class="playbutton-icon"></div>
+            </div><iframe
+              src="https://player.vimeo.com/video/865663807?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+              title="Duet for Dancer and Camera on Tripod"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide slide-leslie" data-hash="2">
+        <div class="vimeo-vid-wrapper">
+          <div class="vimeo-vid">
+            <div class="playbutton">
+              <div class="playbutton-icon"></div>
+            </div><iframe
+              src="https://player.vimeo.com/video/865663484?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Leslie Across the Floor"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide slide-here" data-hash="3">
+        <div class="vimeo-vid-wrapper">
+          <div class="vimeo-vid">
+            <div class="playbutton">
+              <div class="playbutton-icon"></div>
+            </div><iframe
+              src="https://player.vimeo.com/video/865664036?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Here It Comes"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+
+  <script>
+    var swiper = new Swiper(".swiper", {
+      direction: "horizontal",
+      slidesPerView: 1,
+      mousewheel: false,
+      swipe: true,
+      speed: 500,
+      rewind: false,
+      hashNavigation: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    //var slideTextLinks = document.querySelectorAll(".slide-text-link");
+
+    //slideTextLinks.forEach(slideTextLink => {
+    //  slideTextLink.addEventListener("click", nextSlide)
+    //});
+
+    //function nextSlide() {
+    //  swiper.slideNext();
+    //}
+    //swiper.on('slideChange', function () {
+    //  console.log('slide changed');
+    //  if (swiper.activeIndex == "16") {
+    //    slideTextLinks.forEach(slideTextLink => {
+    //      slideTextLink.style.transform = "rotate(180deg)";
+    //    });
+    //  }
+    //  if (swiper.activeIndex != "16") {
+    //    slideTextLinks.forEach(slideTextLink => {
+    //      slideTextLink.style.transform = "rotate(0)";
+    //    });
+    //  }
+    //});
+  </script>
+
 </body>
 
 </html>
