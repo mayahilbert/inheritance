@@ -4,117 +4,502 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
   <title>Gabriela Vainsencher: Inheritance</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Martel:wght@200;700&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Martel:wght@200;600;700&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&family=Merriweather+Sans:wght@300;400&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
   <link rel="stylesheet" href="main.css">
 
 
 </head>
 
-<body>
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide slide-negative" data-hash="0">
-        <div class="vimeo-vid-wrapper">
-          <div class="vimeo-vid">
-            <div class="playbutton">
-              <div class="playbutton-icon"></div>
-            </div>
-            <iframe
-              src="https://player.vimeo.com/video/865662726?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Negative Capability"></iframe>
-          </div>
+<body class="dark-bg inheritance-home">
+  <div id="fader"> Loading ...
+  </div>
+
+  <div class="cursor">
+    <div class="cursor__ball cursor__ball--big">
+      <svg height="70" width="70">
+        <circle cx="26" cy="26" r="25" stroke-width="0"></circle>
+      </svg>
+    </div>
+
+    <div class="cursor__ball cursor__ball--small">
+      <svg height="10" width="10">
+        <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+      </svg>
+    </div>
+  </div>
+
+  <h1 class="exhibition-title">
+    Gabriela Vainsencher: <span class="bolder">Inheritance</span>
+  </h1>
+  <div class="three-columns">
+    <!--left side-->
+    <div class="left modal-home" id="curatorial-statement">
+      <span class="close hoverable show-mobile">Back to home</span>
+      <div class="slide">
+        <div class="curatorial-statement-header">
+          <h2 class="curatorial-statement-title"><span class="quotation-mark--large">“</span>Framings<span
+              class="quotation-mark--large">”</span></h2>
+          <p class="text"><span class="italic">Curatorial Statement by Katherine Behar</span></p>
+          <p class="center"><a href="inheritance_curatorial-statement.pdf" download class="standalone-link">DOWNLOAD
+              CURATORIAL
+              STATEMENT (.PDF)</a></p><br>
+          <hr>
+          <p class="pull-quote center">
+            There is a center<br>but the center is empty.
+          </p>
+          <hr>
+          <span class="center">—Lydia Davis, “The Center of the Story” (quoted in Gabriela Vainsencher's
+            <cite>Negative Capability</cite>)</span>
         </div>
-      </div>
-      <div class="swiper-slide slide-duet" data-hash="1">
-        <div class="vimeo-vid-wrapper">
-          <div class="vimeo-vid">
-            <div class="playbutton">
-              <div class="playbutton-icon"></div>
-            </div><iframe
-              src="https://player.vimeo.com/video/865663807?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
-              title="Duet for Dancer and Camera on Tripod"></iframe>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide slide-leslie" data-hash="2">
-        <div class="vimeo-vid-wrapper">
-          <div class="vimeo-vid">
-            <div class="playbutton">
-              <div class="playbutton-icon"></div>
-            </div><iframe
-              src="https://player.vimeo.com/video/865663484?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Leslie Across the Floor"></iframe>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide slide-here" data-hash="3">
-        <div class="vimeo-vid-wrapper">
-          <div class="vimeo-vid">
-            <div class="playbutton">
-              <div class="playbutton-icon"></div>
-            </div><iframe
-              src="https://player.vimeo.com/video/865664036?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Here It Comes"></iframe>
-          </div>
+
+        <!--curatorial long text-->
+        <div class="curatorial-text">
+          <p class="text">The New Media Artspace is proud to present <cite>Gabriela Vainsencher: Inheritance</cite>, a
+            solo exhibition of single-channel videos alongside sculptural and photographic media. Inheritance brings
+            together four video works created between 2014 and 2016 (exhibited in-person and online), in particular one
+            created through dialog with her mother. These works are accompanied by details of one of Vainsencher's
+            large-scale ceramic works from 2021 (exhibited online only) created after she became a mother herself, as
+            well
+            as artifacts of her practice (exhibited in-person only), including ceramics and photographic props that
+            appear
+            in the videos and provide context for these works. The exhibition sets a frame for understanding
+            Vainsencher's
+            work over this span of several years, and that work in turn is enframed by her experiences being Jewish,
+            Israeli, Argentine, trilingual, an immigrant—and no less, being a daughter and a mother.</p>
+          <p class="text">Emerging from this intersectional inherited identity, Vainsencher's feminist artistic practice
+            highlights learning as a non-hierarchical collective process. This extends to an emphasis on community, on
+            text and commentary such as the Talmudic practice of framing a text with other texts, and on learning from
+            one's elders and learning together, all of which Vainsencher attributes to Jewish traditions. Vainsencher's
+            creative process revolves around dialog, textual commentary, and collaboration. In turn, this “revolving” is
+            literalized in the forms of her videos and sculptures, which are continually circling around, looping,
+            swerving, turning, and not quite returning. From speech comes stutters, from touch comes porosity, from
+            openings come closures, from surfaces come circularity, from daughters come mothers. Vainsencher's works are
+            always coming around again with layered meanings, which the artist holds open to make space for
+            interpretation
+            and transformation.</p>
+          <hr>
+          <p class="text"><cite>Negative Capability</cite> begins with a shot of the upper torso of a woman (the artist)
+            wearing a black shirt and nearly disappearing against a black background. Her hands and throat, exposed
+            above
+            the neckline and below the sleeves or her garment, are the only parts of her body that are visible against
+            the
+            black void. Also visible is an object, a cylindrical ceramic sculpture, which she holds with both hands in
+            front of her chest at the dead center of the frame. She rotates this object aiming its mouth at the camera,
+            and in sync the video image moves in and out of focus, as though by manipulating the hollow sculpture she
+            controls the focal ring on the lens. After a few turns, an older woman's voice commences a one-sided
+            conversation, speaking in Hebrew which at times gives way to Spanish, while white subtitles in English pop
+            up
+            in staccato rhythms of short phrases usually offset toward the bottom or sides of the frame. The cryptic
+            narration mixes anecdotes, metaphors, humor, and wisdom. Generally, it seems to concern coming to terms with
+            what isn't known or knowable, what may or may not happen. Eventually it becomes evident that the narrator is
+            discussing her practice as a psychoanalyst.</p>
+          <p class="text">Like talk therapy itself, once it begins the voice doesn't stop. Instead, the image shifts:
+            hands, always doing, manipulate rolling and sliding abstract ceramic forms; a throat swallows; the figure
+            hides behind masks; more cylindrical forms rotate around her missing head, obscuring it; hands attempt to
+            piece two ceramic fragments together to form a circle, but the gaps are too wide to close its loop and any
+            way
+            she turns the fragments spans only half the curve. </p>
+          <p class="text">Eventually the narrator explains the meaning of the phrase “negative capability,” a concept
+            introduced by the poet Keats to refer to “the ability to be suspended in not knowing, … not having closure …
+            not doing.” The narrator praises this difficult work of keeping things unknown, not rushing to closure.
+            Finally, after the figure disappears and against an image of undulating waves, comes a question from the
+            narrator, the artist's mother, who asks “What's this all about Gabriela?” and then—like the analyst she
+            is—begins to speculate as to her daughter's motivations, but—like the mother she is—with laughter.</p>
+          <p class="text">On one level, <cite>Negative Capability</cite> explores intergenerational communication and
+            miscommunication. The psychoanalyst mother works in her medium—talking and words—while the artist daughter
+            works in her medium—images and objects. The two parts never quite align in form; yet, in content they are in
+            uncannily perfect alignment. This is because on another level, the piece compares how mother and daughter
+            both
+            contend with something similar in the different work they do. Both engage a process. Both allow space for an
+            empty center—the unknown that must be held in abeyance to keep a process—whether creative or
+            therapeutic—richly alive. Vainsencher has written about the how analysis and art share an investment in
+            interpretation.<a href="#footnote-1"><sup>1</sup></a> For each, the empty center holds an elusive meaning
+            that
+            can't be arrived at or even
+            articulated, or else the artwork would be trite, or else the self-realization would be too pat, or worse
+            externalized (as the mother points out in her first lines).</p>
+          <p class="text"><cite>Negative Capability</cite> originated in audio recordings of phone conversations between
+            the artist and her mother, which she first painstakingly transcribed, then translated, then remixed. Only at
+            the last step did she abandon her devotion to faithfully conveying her mother's words. In this artfully
+            (re)interpreted conversation with her mother, Vainsencher emphasizes a process giving rise to a collectively
+            authored frame circling an unknown, which she likens to the <cite>Gamra</cite> page in Talmudic traditions.
+            At
+            the center of a Gamra page sits holy text, and enframing that text are other texts consisting in mutable
+            commentary. In the case of <cite>Negative Capability</cite>, the mother's text lies at the center, and the
+            framing commentary, open to interpretation, is the artwork that emerges from the daughter's reworking. This
+            encircling processing of a holy or wholly unknowable connects psychoanalytic process and artistic process,
+            as
+            both attempt to apprehend something intangible at their heart.</p>
+          <p class="text">The complementarity of two disciplines in <cite>Negative Capability</cite> is explored
+            figuratively in the next video, <cite>Duet</cite>, which features another collaborator of Vainsencher's, the
+            dancer and choreographer Leslie Satin. Satin faces the camera with the tight frame grazing her forehead and
+            chin. Her face is in slow but constant motion. As she moves her head side to side, like indicating a silent
+            “no,” the camera swivels on a tripod, mimicking her movement. The duet unfolds as parallel movements between
+            the discipline of performance represented by Satin, and the discipline of video, represented by
+            Vainsencher's
+            camera.
+          </p>
+          <p class="text">In this duet, the empty center is where the dancer's gaze and the gaze of the lens intersect.
+            Continuing the themes of <cite>Negative Capability</cite>, Satin's solemn refusal suggests a negation, while
+            both the shaking head and the panning camera follow the arc of a semicircle. Combined, the two might make a
+            complete circle, but instead they draw attention to the empty space between the performer and the lens. The
+            simple eloquence of <cite>Duet</cite> is to hold empty that space between them, which is Vainsencher's
+            invitation for the viewer to fill in their own experience.<a href="#footnote-2"><sup>2</sup></a>
+            Vainsencher's
+            intention is to make room for the viewer, which she understand requires an artist not take up all of the
+            space
+            herself, burdening an artwork with overprescribed meaning. Following the garrulous <cite>Negative
+              Capability</cite>, this silent video might even be interpreted as its inverse. Whereas Vainsencher's
+            mother
+            only speaks and never appears in <cite>Negative Capability</cite>, Satin's face embodies the frame as she
+            shakes her head “no” in a refusal to speak.</p>
+          <p class="text">Satin appears again in <cite>Leslie Across the Floor</cite>. Again, much as <cite>Negative
+              Capability</cite> locates a common ground between artistic and psychoanalytic process, <cite>Leslie Across
+              the Floor</cite> explores a feature in common between the two collaborators' disciplines, video and dance.
+            Both utilize entrances and exits and the choreography of this video is reduced to exactly that. Satin enters
+            from the left side of the frame, inchworming on her back along the floor until she exits at the frame's
+            right
+            side. Unlike <cite>Duets</cite> which focuses exclusively on Satin's face, here her head is turned away from
+            the camera so that her face is never visible. The movement of her body is exaggerated by foley audio which
+            unexpectedly substitutes the sound of dragging heavy metal in place of the softer sounds of cloth and flesh
+            on
+            floor.</p>
+          <p class="text">Entrances and exits, and the anticipation they entail, are performed again in the last video,
+            <cite>Here It Comes</cite> but this time the performer is the ocean. Recalling the final watery image of
+            <cite>Negative Capability</cite>, this video shows waves lapping against a coast. As the waves slowly roll
+            in,
+            choruses of whispers repeat “Here it comes” overlapping with “It's coming.” Just as the ocean's waves never
+            stop, the anticipation never reaches a conclusion. Instead, this video holds our attention, like the voices
+            hold their breath and gasp for air. The empty center of <cite>Here It Comes</cite> is that which might come,
+            which might fill in what's missing from an evacuated center constantly being washed away, sucked back to sea
+            like the vacuumed void of undertow.
+          </p>
+          <p class="text">In the online version of the exhibition, each video is bordered by close detail images from
+            one
+            of Vainsencher's largescale ceramic works, <cite>Mom</cite>. The sculpture itself is a wall-scaled relief
+            work
+            showing a twisting looping, many-limbed figure. Created after the birth of Vainsencher's first child,
+            <cite>Mom</cite> shows the many roles she takes on as a daughter turned mother to a daughter. As though
+            pulled
+            in many directions, the clay surface bears the touch of a million clamoring fingerprints. The deeply
+            textured
+            surfaces recall the busy hands manipulating clay objects in <cite>Negative Capability</cite>. In
+            <cite>Mom</cite>, hands are also constantly doing things, now cooking, shampooing, and carrying. In
+            <cite>Inheritance</cite>, the textures of <cite>Mom</cite> mimic the enframing form of the
+            <cite>Gamra</cite>
+            page, also becoming a frame for the video works Vainsencher created as her mother's daughter.
+          </p>
+          <p class="text">Many of the works in the exhibition take the visual shape of a frame: from the hollow ceramic
+            cylinders and circles in <cite>Negative Capability</cite>, to the panning semi-circle arcs gestured in
+            <cite>Duet</cite>, to the bracketing device of entrances and exits that motivate <cite>Leslie Across the
+              Floor</cite>, to the anticipation that holds attention in <cite>Here It Comes</cite>, to the curatorial
+            decision to use the textures of <cite>Mom</cite> as a border around video works. These enframing forms make
+            reference to the Talmud which inspires the design of the <cite>Inheritance</cite> exhibition. They also
+            function much like a family does—they encircle, enshrine, and protect something precious at the center.
+          </p>
+          <p class="text">Vainsencher is also inspired by the Jewish practice of learning together,
+            <cite>Be'Tzavta</cite>, which she loosely translates as “as a team; together.” <cite>Be'Tzavta</cite>
+            involves
+            reading as a group and discussing a text while seated together in a circle, a practiced she was introduced
+            to
+            by the artist Ofri Cnaani's feminist reading group at AIR gallery. Once again, “there is a center but the
+            center is empty.” Vainsencher consciously connects <cite>Be'Tzavta</cite> to the anti-hierarchical feminist
+            approaches she applies throughout her work. At Baruch, she will present a special participatory performance
+            of
+            <cite>Here It Comes</cite> that literally embodies <cite>Be'Tzavta</cite> circular communal form.
+            Additionally, at the New Media Artspace in-person exhibition, she shares several of the artifacts and
+            process
+            pieces that contribute to her work, inviting viewers into her process by creating an intimate learning
+            community in the Newman Library. Mirroring the <cite>Gamra</cite> page and the <cite>Be'Tzavta</cite>
+            practices, encircling text and (re)interpretive commentary underpin Vainsencher's process at every level. In
+            <cite>Inheritance</cite>, these are continually come around, revolving and enframing through the artist's
+            reinventions, reincarnations, and inheritances.
+          </p>
+          <hr>
+          <p class="text">This exhibition is generously sponsored by the Sandra Kahn Wasserman Jewish Studies Center
+            under
+            the directorship of Dean Jessica Lang.</p>
+          <p class="text"><cite>Gabriela Vainsencher: Inheritance</cite> is curated by Katherine Behar, Professor in the
+            Fine and Performing Arts Department in the Weissman School of Arts and Sciences, Baruch College, CUNY and is
+            produced by the New Media Artspace Student Docent Team. The exhibition is made possible by further support
+            from the Baruch Computing and Technology Center (BCTC), the Weissman School of Arts and Sciences, and the
+            Newman Library. All images appear courtesy of the artist.</p>
+          <hr>
+          <p class="text">Gabriela Vainsencher was born in Buenos Aires, raised in Tel Aviv, and currently lives in
+            Montclair. She received her MFA from Hunter College, CUNY in 2016. Past solo and two-person exhibitions
+            include Asya Geisberg gallery (solo) CRUSH Curatorial gallery, NY, NY, A.I.R. Gallery, Brooklyn, NY (solo),
+            Hanina Gallery, Tel Aviv, Israel; Musée d'Art Moderne André Malraux, Le Havre, France; Parker's Box Gallery,
+            Brooklyn, NY and La Chambre Blanche, Québec City, Canada (solo).</p>
+          <p class="text">Her work has been included in group exhibitions including Marisa Newman Projects, NY, NY,
+            Bergamo Modern and Contemporary Art, Italy; Kunstforening, Tromsø, Norway; Pierogi gallery, Brooklyn, NY,
+            The
+            Freies Museum, Berlin and The National Gallery of Saskatchewan, Canada. Residencies include Yaddo, The
+            Atlantic Center for the Arts, Byrdcliffe Artist Residency, Woodstock (USA), Triangle Arts Association
+            (France), and La Chambre Blanche (Canada).</p>
+          <p class="text">Vainsencher is the founder of the <a href="https://morningdrawingresidency.com/">Morning
+              Drawing
+              Residency</a>. Her writings about art have appeard in <a
+              href="http://hyperallergic.com/author/gabriela-vainsencher/">Hyperallergic</a>, <a
+              href="http://www.title-magazine.com/tag/gabriela-vainsencher/">Title Magazine</a>, and <a
+              href="http://tohumagazine.com/profile/gabriela-vainsencher">Tohu magazine</a>. She occasionally teaches
+            art
+            at Williams College, and the Macaulay Honors College at Hunter College, CUNY.</p>
+          <p class="text small" id="footnote-1"><sup>[1]</sup> Gabriela Vainsencher, “Negative Capability,” Master of
+            Fine
+            Arts
+            Thesis
+            (Hunter College of the City University of New York, 2016).</p>
+          <p class="text small" id="footnote-1"><sup>[2]</sup> Gabriela Vainsencher, interviewed by the author, online,
+            July 5,
+            2023.</p>
         </div>
       </div>
     </div>
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
 
+
+    <!--middle-->
+    <div class="middle">
+      <div class="slide">
+        <h2 class="curatorial-heading hide-mobile">Curatorial Statement</h2>
+        <h2 class="curatorial-heading curatorial-heading-mobile show-mobile"><button
+            class="home-modal-button modal-button hoverable">
+            <span href="#curatorial-statement">Curatorial Statement</span>
+          </button></h2>
+        <div class="view-container">
+          <a href="view.html">
+            <div class="swiper-container">
+              <div class="swiper-auto">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="mom-1-min.jpg" alt="Mom" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="negative-capability-thumb.jpg" alt="Negative Capability still" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="negative-capability-texture-full-min.jpg" alt="Photo of Mom sculpture" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="duet-thumb.jpg" alt="Duet still" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="duet-texture-l-min.jpg" alt="Photo of Mom sculpture" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="leslie-2.jpg" alt="Leslie Across the Floor still" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="here-it-comes-texture-l-min.jpg" alt="Photo of Mom sculpture" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="here-it-comes-thumb.jpg" alt="Here It Comes still" />
+                  </div>
+
+                </div>
+              </div>
+            </div><span class="view-link">Enter the Exhibition</span>
+          </a>
+        </div>
+        <h2 class="interview-heading hide-mobile">Artist Interview</h2>
+        <h2 class="interview-heading interview-heading-mobile show-mobile"><button
+            class="home-modal-button modal-button hoverable">
+            <span href="#artist-interview">Artist Interview</span>
+          </button></h2>
+
+      </div> <a class="nma-link" href="https://newmediartspace.info">New Media Artspace</a>
+
+    </div>
+
+    <!--right side-->
+    <div class="right modal-home" id="artist-interview">
+      <span class="close hoverable show-mobile">Back to home</span>
+      <div class="slide">
+        <div class="interview-text">
+          <h2 class="artist-interview-title">
+            Gabriela Vainsencher speaks with Silvia Ruzanka</h2>
+          <p class="text"><span class="italic">[Past artist interview for lorem ipsum]
+              This year the New Media Artspace presents two solo exhibitions by Sarada Rauch and
+              Kerry Downey that both address political consciousness as craftwork.
+              In conjunction with Rauch's exhibition, Downey interviews Rauch as the
+              first part of a two-way dialogue between the artists on their works in relation to these and more
+              ideas.</span></p><br>
+          <p class="text"><span>
+              Kerry Downey: While your work reads to me as playful, intuitive and process-based, the way you make things
+              also doubles as a reflection of the way we are all produced through power relations. There's a feminist
+              and
+              queer radicality, even an anarchism in your work that's really potent. In Topple, you are taking on and
+              taking
+              down racist and fascist public monuments (and I might add, years before the popularized public concern
+              over
+              Confederate monuments). Topple is so simple, so beautifully direct—an anti-monument, anti-anthem jingle
+              for
+              the revolution. It's like: it's not that hard people, let's just take them down! Because you've handmade
+              the
+              monuments in miniature, this work reminds us, they're just fragile, human-made objects. None of this
+              history
+              is stuck and yet history repeats. <br>Can you talk about the connection between the macro and micro,
+              between
+              the dying star and the toppled monument, or between the hierarchical symbol of the monument and the scale
+              of
+              hand?<br>
+              Sarada Rauch: My process is intuitive in some regards, but mostly at the beginning. My work begins with
+              historical and scientific research which I digest through prose and poetry. I create snapshots of imagery
+              from
+              these words and string them together to create a narrative. Then I start constructing the visual.<br>
+              I love shifting perspectives in my work. My miniature environments encompass large sculptures through
+              digital
+              collage, or my hand intrudes into the scale of the scene. The miniature environments I build become larger
+              than what they are mimicking.<br>
+              In general, I am interested in how power works. I conflate scale to shift perspective, and play with
+              micro-viewing and macro-viewing. As an individual, independent actions are micro, but are part of a larger
+              macro system. Small acts can lead to rebellion. Small individual microcosms can spark protest. It is
+              almost
+              tacky, the metaphor. Power systems being so huge, and one individual being so small, then I reverse it. An
+              individual is powerful and the paradigm is small and malleable. The micro becomes macro.<br>
+              KD: In your videos you construct a lot of spaces inside spaces. You can see from inside a living room
+              window
+              out into a strange turbulent landscape. Inside it's cozy, outside it's war and I have a hand in it remind
+              me
+              of Martha Rosler's Bringing the War Home series, where two seemingly disparate worlds, the domestic and
+              military spheres are shown in close proximity. As rooms open up into other rooms, you have us zooming in
+              and
+              out, so that our perspective is beingframed and reframed. You also embed video monitors inside altered
+              found
+              objects like picture frames. I never think what I'm watching is “real,” I always know it's a construct.
+              Yet I
+              believe in the worlds you're making, I'm invested in them and feel close to them—I'm a voyeur and
+              participant!
+              How do you conceive of the role of framing or constructing spaces/places for your audience?<br>
+              SR: When making a video, I think of it as creating a universe that has its own scientific logic and
+              aesthetics. I am really into facts-based world building like science fiction, speculative biology, and
+              game
+              art. I view science fiction as a new folklore, it imagines new narratives from ancient stories.
+              Speculative
+              Biology is similar, imagining different facts-based possibilities. In game art, you create the physical
+              environment with its own set of rules. You also often create a whole narrative and character development,
+              and
+              the characters themselves. There are no limitations of reality.<br>
+              The what if's of these genres attract me. What if this line of evolution went this way instead? What if
+              our
+              society took this turn? The uncharted territories, without already worn paths, is a collective think tank.
+              This type of imagination can be a powerful political action.<br>
+              KD: Your work has an abundance of amazing retro influences, from early MTV to early sci-fi to video art
+              pioneers like Joan Jonas. A thru-line in this is a willingness to make aspects of your process
+              transparent,
+              showing your hand, so-to-speak, creating this amazing DIY aesthetic and collage sensibility. Seeing
+              evidence
+              of your hand's craftsmanship feels very inviting and engaging. It makes the work feel accessible and I
+              find
+              myself wondering how you made it, or feeling like, oh, I could make that! Can you talk a bit about the
+              significance of your lo-fi, hand-spun techniques—their intentions and influences?<br>
+              SR: I wish I could claim intention, and pretend this style was a choice from the beginning, butit's not.
+              The
+              choice I made was choosing to be myself rather than fail at being something I was not. I tried really hard
+              in
+              some early years to be a cleaner, slicker, less emotional artist. And I justcould not do it. Once I
+              admitted
+              to myself that I would continue failing at being clean, slick and super-conceptual, I moved towards the
+              way I
+              was naturally. I embraced it as a choice and got into it.</br>
+              In a digital world there is an ability to create more dimensions, and build something abstract. I am able
+              to
+              conflate scale, like inserting a large sculpture into a small landscape, or collaging a variety of
+              perspectives into one plane. Yet the tactile, physical world shows my hand within the process of making.
+              My
+              handcraft is imperfect, and there is an emotional intelligence to things that are imperfect. My pieces
+              acknowledge their own silliness and because of this they can also dabble with being genuine. They are
+              winking
+              at you while telling you something heartfelt.<br>
+              As for references and influences, I had to choose to embrace myself with those as well. Growing up, the
+              only
+              shows I could watch on television were Star Trek, The Muppets and the PBS NewsHour. I had no connection to
+              pop
+              culture references. To join conversations with my peers, Ireplicated social cues and pop-culture
+              references
+              based on hearsay. My work is influenced by what I saw on the small screen as a child: ridiculously-fake
+              set
+              design mixed with current events,filtered through pop culture. I continue the practice of watching from a
+              distance, and reenacting popular media as a way to understand the world I feel at odds with.<br>
+              KD: In the realm of a dying star is classic Sarada Rauch. As a series of DIY music videos with “sides A &
+              B”
+              like cassette tapes, it brings together music, video, collage, sculpture, poetry – and through their
+              karaoke
+              renditions, performance. Like Tracy and the Plastics, your work genre-crosses in a way that puts these
+              different mediums not only in direct conversation with each other, but creates an interdependency between
+              them, so that being interdisciplinary is much more than just working in a lot of mediums. It feels to me
+              that
+              the music needs the sculpture, the sculpture needs the moving image, the video needs the language, etc.
+              How do
+              you think of these mediums communicating with one another?<br>
+              SR: I don't think of the different mediums as separate entities. I feel like they are different arms of
+              the
+              same body. Like how a painter uses color, or how you express yourself differently when speaking different
+              languages. But to answer your question, I grew up in a family of artists and professional musicians. Early
+              on
+              before I was 10, my designated space was visual art. But when I was turning 20, and just moved to New
+              York, I
+              became terribly disgusted by the commercial art world here. I decided to swear off of art and become a
+              musician. I purchased a twisted up acoustic guitar, and taught myself how to play it. I wrote songs and
+              went
+              out performing. I started making my own jug-band style instruments from household objects, out of
+              financial
+              necessity. However, I am wired towards the visual language. And turns out, I am terrible at performing my
+              music live. My songs started to integrate performance art, which migrated back into making video and
+              film.<br>
+              My musician arm influenced the sculptor and video arms by being an amateur, and those arms influenced the
+              music through pattern. I am what musicians call an “untrained” musician, which isthe equivalent to how
+              artists
+              call some people “outsider” artists—both terms and concepts that make me roll my eyes and fake barf. Not
+              being
+              “trained” in music allowed me to write with emotional intelligence, because I didn't know the rules. I was
+              taught art since the moment I couldhold a pencil, with all the rules. I appreciate that knowledge, but it
+              doesn't allow me to be as freewith my intuitive decisions. I chose to teach myself all things music
+              because of
+              this. In music, at times I can be more raw or silly. I write songs and music visually, mapping out the
+              notes
+              and chords like a drawing. This creates songs that have brazen meter modulation, or weird chord
+              structure–so I
+              have been told. And finally, as the child of an activist, I was bred on direct action. Protest songs are
+              driven by their content, they are accessible and urgent. I feel an urgency right now that I cannot satiate
+              with my art alone. Words are needed.<br>
+            </span></p>
+        </div>
+      </div>
+    </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
 
+  <script src="main.js"></script>
+  <script>fadeInPage();
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script src="https://player.vimeo.com/api/player.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
     integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
-  <script src="main.js"></script>
+  <script src="home.js"></script>
 
   <script>
-    var swiper = new Swiper(".swiper", {
-      direction: "horizontal",
-      slidesPerView: 1,
-      mousewheel: false,
-      swipe: true,
-      speed: 500,
-      rewind: false,
-      hashNavigation: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+    var swiper = new Swiper(".swiper-auto", {
+      speed: 4500,
+      lazy: true,
+      effect: "fade",
+      loop: true,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      }
     });
-
-    //var slideTextLinks = document.querySelectorAll(".slide-text-link");
-
-    //slideTextLinks.forEach(slideTextLink => {
-    //  slideTextLink.addEventListener("click", nextSlide)
-    //});
-
-    //function nextSlide() {
-    //  swiper.slideNext();
-    //}
-    //swiper.on('slideChange', function () {
-    //  console.log('slide changed');
-    //  if (swiper.activeIndex == "16") {
-    //    slideTextLinks.forEach(slideTextLink => {
-    //      slideTextLink.style.transform = "rotate(180deg)";
-    //    });
-    //  }
-    //  if (swiper.activeIndex != "16") {
-    //    slideTextLinks.forEach(slideTextLink => {
-    //      slideTextLink.style.transform = "rotate(0)";
-    //    });
-    //  }
-    //});
   </script>
 
 </body>
