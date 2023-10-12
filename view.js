@@ -56,7 +56,7 @@ for (var i = 0; i < spans.length; i++) {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target.classList.contains('modal')) {
+    if (event.target.classList.contains('modal') || event.target.classList.contains('swiper-button-next') || event.target.classList.contains('swiper-button-prev')) {
      for (var index in modals) {
       if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
      }
