@@ -143,6 +143,12 @@ body .cursor__ball {
     z-index: 1000;
 }
 
+@media (hover: none) {
+    body .cursor {
+        display: none;
+    }
+}
+
 body .cursor__ball circle {
     fill: var(--maroon);
 }
