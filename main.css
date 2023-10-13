@@ -697,6 +697,7 @@ iframe {
 }
 
 .desc-2::after {
+    font-family: "Noto Serif";
     content: "\1F863";
     padding-left: 0.4em;
 
