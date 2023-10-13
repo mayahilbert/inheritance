@@ -685,6 +685,16 @@ iframe {
     transform-origin: right;
 }
 
+.home-1::before {
+    content: "\1F861";
+    padding-right: 0.4em;
+}
+
+.desc-2::after {
+    content: "\1F863";
+    padding-left: 0.4em;
+
+}
 
 .home-button span.home-2 {
     display: inline-block;
@@ -696,6 +706,7 @@ iframe {
 .corner-button span.corner-2 {
     pointer-events: none;
 }
+
 
 /* Modal (for work description) */
 .modal {
