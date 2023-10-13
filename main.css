@@ -692,13 +692,13 @@ iframe {
 }
 
 .home-1::before {
-    font-family: "Noto", "Source Sans Pro", Roboto, "Segoe UI";
+    font-family: 'Noto Sans Symbols 2', sans-serif;
     content: "\1F861";
     padding-right: 0.4em;
 }
 
 .desc-2::after {
-    font-family: "Noto", "Source Sans Pro", Roboto, "Segoe UI";
+    font-family: 'Noto Sans Symbols 2', sans-serif;
     content: "\1F863";
     padding-left: 0.4em;
 
