@@ -214,7 +214,7 @@ h1 {
 
 h2,
 h2 button {
-    font-size: clamp(1.1rem, 1rem + 1.5vw, 2rem);
+    font-size: clamp(0.9rem, 1rem + 1.5vw, 2rem);
     font-weight: lighter;
     letter-spacing: .03em;
     text-align: center;
@@ -1013,6 +1013,10 @@ iframe {
 }
 
 @media (max-width: 1000px) {
+    .view-container {
+        width: 70%;
+    }
+
     .view-container a {
         display: flex;
         flex-direction: column-reverse;
