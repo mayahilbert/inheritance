@@ -1022,6 +1022,11 @@ iframe {
         flex-direction: column-reverse;
     }
 
+    .curatorial-heading-mobile,
+    .interview-heading-mobile {
+        z-index: 9999;
+    }
+
     .nma-link {
         margin-top: 1em;
     }
