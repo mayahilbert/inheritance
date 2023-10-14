@@ -1024,7 +1024,7 @@ iframe {
 
     .curatorial-heading-mobile,
     .interview-heading-mobile {
-        z-index: 9999;
+        z-index: 8000;
     }
 
     .nma-link {
