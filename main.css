@@ -195,7 +195,8 @@ body.inheritance-home .cursor__ball--big circle {
     display: none;
 }
 
-.bolder {
+.bolder,
+p.text span.bolder {
     font-weight: 600;
 }
 
