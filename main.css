@@ -237,6 +237,11 @@ p.text span.italic {
     text-align: center;
 }
 
+p.text span.italic em {
+    font-style: normal;
+}
+
+
 .interview-text p.text span.italic {
     text-align: left;
 }
